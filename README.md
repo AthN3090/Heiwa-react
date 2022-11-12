@@ -17,11 +17,11 @@
   
 </p>
 
-<p style="text-align: center">
-   <img height="500px"  width="500px" src="./readme-images/home.PNG" />
+<p align="center">
+   <img width="500px"  src="./readme-images/home.PNG" />
 </p>
-<p style="text-align: center">
-   <img height="500px" width="500px" src="./readme-images/chat.PNG" />
+<p align="center">
+   <img width="500px" src="./readme-images/chat.PNG" />
 </p>
 
 ## Key Features
