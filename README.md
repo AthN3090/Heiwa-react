@@ -1,16 +1,16 @@
 <p align="center">
    <img height="200px"  src="./readme-images/banner.png" />
 </p>
-<h1 style="text-align:center">Heiwa 🕊</h1>
-<h3 style="text-align: center">An end to end anonymous chatting application where people talk about their mental health.</h3>
+<h1 align="center">Heiwa 🕊</h1>
+<h3 align="center">An end to end anonymous chatting application where people talk about their mental health.</h3>
 
-<p style="text-align:center">
+<p align="center">
     <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt=react>
       <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt=express>
       <img src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101" alt=socket>
      <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt=node>
 </p>
-<p style="text-align:center">
+<p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#local-setup">Local Setup</a> •
   <a href="#how-to-use">How To Use</a> 
