@@ -1,4 +1,4 @@
-<p align="center>
+<p align="center">
    <img height="200px"  src="./readme-images/banner.png" />
 </p>
 <h1 style="text-align:center">Heiwa 🕊</h1>
