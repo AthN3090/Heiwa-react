@@ -1,8 +1,7 @@
-<p style="text-align: center">
+<p align="center>
    <img height="200px"  src="./readme-images/banner.png" />
 </p>
 <h1 style="text-align:center">Heiwa 🕊</h1>
-<hr style="height:1px">
 <h3 style="text-align: center">An end to end anonymous chatting application where people talk about their mental health.</h3>
 
 <p style="text-align:center">
