@@ -1,0 +1,8 @@
+.App{
+    display: flex;
+}
+@media only screen and (max-width: 768px){
+    .App{
+        flex-direction: column;
+    }
+}
