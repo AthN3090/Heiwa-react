@@ -18,10 +18,10 @@
 </p>
 
 <p align="center">
-   <img width="500px"  src="./readme-images/home.PNG" />
+   <img width="800px"  src="./readme-images/home.PNG" />
 </p>
 <p align="center">
-   <img width="500px" src="./readme-images/chat.PNG" />
+   <img width="800px" src="./readme-images/chat.PNG" />
 </p>
 
 ## Key Features
