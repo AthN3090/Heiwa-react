@@ -12,7 +12,7 @@
 </p>
 <p align="center">
   <a href="#about-the-project">About The Project</a> •
-  <a href="#local-setup">Local Setup</a> •
+  <a href="#local-setup">Local Setup</a>
   
 </p>
 
@@ -25,9 +25,9 @@
 
 ## About The Project
 
-Heiwa is a messagin platform for people to talk about their mental health and connect with people going through a similar phase.
+Heiwa is a messaging platform for people to talk about their mental health and connect with people going through a similar phase.
 It also has a basic whiteboard which can be used to play funny doodle games, or people can use it to express themselves creatively.
-<br>After filling the following details : 
+<br><br>On the homepage, The user has to fill the following details : 
 1. Nickname
 2. Tags to describe your feeling
 3. Tags to describe your interests
