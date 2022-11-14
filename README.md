@@ -1,5 +1,5 @@
 <p align="center">
-   <img height="200px"  src="./readme-images/banner.png" />
+   <img width="300px"  src="./readme-images/banner.png" />
 </p>
 <h1 align="center">Heiwa 🕊</h1>
 <h3 align="center">An end to end anonymous chatting application where people talk about their mental health.</h3>
@@ -11,9 +11,8 @@
      <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt=node>
 </p>
 <p align="center">
-  <a href="#key-features">Key Features</a> •
+  <a href="#about-the-project">About The Project</a> •
   <a href="#local-setup">Local Setup</a> •
-  <a href="#how-to-use">How To Use</a> 
   
 </p>
 
@@ -24,25 +23,17 @@
    <img width="800px" src="./readme-images/chat.PNG" />
 </p>
 
-## Key Features
+## About The Project
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
+Heiwa is a messagin platform for people to talk about their mental health and connect with people going through a similar phase.
+It also has a basic whiteboard which can be used to play funny doodle games, or people can use it to express themselves creatively.
+<br>After filling the following details : 
+1. Nickname
+2. Tags to describe your feeling
+3. Tags to describe your interests
+
+The user is matched randomly to another user. After matching, the users can talk about their mental health problems through chat box, or can use the whiteboard to play simple games like (Tic-tac-toe, hangman etc).
+
 
 ## Local Setup
 
@@ -50,10 +41,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/AthN3090/Heiwa-react.git
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd Heiwa-react
 
 # Install dependencies
 $ npm install
@@ -61,12 +52,4 @@ $ npm install
 # Run the app
 $ npm start
 ```
-
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-
-## How To Use
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
 
