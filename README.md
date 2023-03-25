@@ -52,4 +52,6 @@ $ npm install
 # Run the app
 $ npm start
 ```
-
+---
+The server script is written in Express, it handles the socket connections for chat and drawing functions.<br>
+[Backend code repo - Express & Node](https://github.com/AthN3090/Heiwa-backend)
