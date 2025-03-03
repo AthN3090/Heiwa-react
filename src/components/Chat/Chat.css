@@ -71,9 +71,10 @@
 }
 .chat-display{
     width: auto;
+    height: 79.5vh;
     overflow: scroll;
     overflow-x: hidden;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     padding: 20px;
     display: flex;
     flex-direction: column;

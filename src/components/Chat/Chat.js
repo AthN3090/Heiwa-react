@@ -5,12 +5,12 @@ import Loader from '../Loader/Loader'
 import Whiteboard from '../Whiteboard/Whiteboard'
 import { Navigate } from 'react-router-dom'
 
-const AlwaysScrollToBottom = () => {
-    const elementRef = useRef();
-    useEffect(() => elementRef.current.scrollIntoView({ behavior: 'smooth' }));
-    return <div ref={elementRef} />;
-};
+// const AlwaysScrollToBottom = () => {
+//     useEffect(() => elementRef.current.scrollIntoView({ behavior: 'smooth' }));
+//     return <div ref={elementRef} />;
+// };
 function Messages(props) {
+    const elementRef = useRef();
     const { user, socket } = useContext(userContext)
     const [messages, setMessages] = useState([])
     const [inputMsg, setInputMsg] = useState("");
@@ -27,9 +27,11 @@ function Messages(props) {
 
         socket.emit('send-message', { content: message, to: props.receiver.id })
         setMessages([...messages, message])
+        
         setInputMsg('')
     }
     useEffect(() => {
+        elementRef.current.scrollIntoView({ behavior: 'smooth' })
         socket.on('received-message', (data) => {
             setMessages([...messages, data])
         })
@@ -73,7 +75,8 @@ function Messages(props) {
                             return <div className={item.author === user.username ? "sen-text" : "rec-text"}> {item.text}</div>
                         })
                     }
-                    <AlwaysScrollToBottom />
+                    <div ref={elementRef} > </div>
+                    {/* <AlwaysScrollToBottom /> */}
 
                 </div>
                 <div className='chat-input'>
