@@ -2,18 +2,17 @@ import React, { useContext, useEffect, useState} from "react";
 import { userContext } from "../../App";
 import {useNavigate} from "react-router-dom";
 import './Home.css';
-
+import plus from './plus.png'
 
 function Greeting(){
     return(
         <div className="home-greeting">
             <p className="home-logo">
-                Heiwa  ...
+                Heiwa <span style={{fontSize:"64px"}}>🕊️</span>
             </p>
             <div className="home-tag">
-                Hey 👋
-                <p style={{ color: '#536BC1', margin:'0px'}}>Going through tough times ?</p>
-                Let us help you talk to someone in the same boat.
+                <span>Hey!</span> 
+               <span style={{fontSize:"14px"}}> If you're going through a tough time, we’re here for you. Sometimes it helps to talk to someone who gets it. Let us connect you with someone who’s been through it too.</span>
             </div>
         </div>
         )
@@ -97,44 +96,58 @@ function Menu(){
     return (
         <div className="home-menu">
             <form onSubmit = {(e) => e.preventDefault()} style={{height: 'auto', width: '80%', margin: '50px'}}>
-            <label  className="input-label">What do you like to be called ?</label><br/>
-            <input  className="home-input" 
-                type={'text'} 
-                value={input.username} 
-                onChange = {(e) => setInput({...input, username : e.target.value})} 
-                onKeyDown = {(e)=> e.key === 'Enter' ? e.preventDefault() : ""}
-                placeholder = "Enter username"
-                required
-                /><br/>
+            <div style={{display: 'flex', flexDirection:"column", gap: '30px'}}>
+                    <div className="home-inputs" style={{ gap: '10px' }}>
+                        <label className="input-label">What would you like to be called ?</label>
+                        <input className="home-input"
+                            type={'text'}
+                            value={input.username}
+                            onChange={(e) => setInput({ ...input, username: e.target.value })}
+                            onKeyDown={(e) => e.key === 'Enter' ? e.preventDefault() : ""}
+                            placeholder="Enter username"
+                            required
+                        />
+                    </div>
+                    <div className="home-inputs">
 
-            <label className="input-label">How do you feel ?</label><br/>
+                        <label className="input-label">What do you feel ?</label>
+                        <div id="feelings">
+                            {feelings.map(item => <Tag key={item} name={item} remove={removeFeelings} />)}
+                        </div>
+                        <div
+                            style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                            <input className="home-input" type={'text'} value={input.feelings}
+                                onChange={(e) => setInput({ ...input, feelings: e.target.value })}
+                                onKeyDown={(e) => (e.key === 'Enter') ? handlerFeelings(e) : ""}
+                                placeholder="Add your feelings"
+                            />
+                            <button className="add-tag" onClick={(e) => handlerFeelingsMobile(e)}>
+                                <img src={plus} alt="add-tag" />
+                            </button>
+                        </div>
 
-            <div id="feelings">
-                {feelings.map(item => <Tag key = {item} name = {item} remove = {removeFeelings} />)}     
+                    </div>
+
+                    <div className="home-inputs">
+                        <label className="input-label">What would you like to talk about ?</label>
+                        <div id="interests">
+                            {interests.map(item => <Tag key={item} name={item} remove={removeInterests} />)}
+                        </div>
+                        <div
+                            style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                            <input className="home-input" type={'text'} value={input.interests}
+                                onChange={(e) => setInput({ ...input, interests: e.target.value })}
+                                onKeyDown={(e) => (e.key === 'Enter') ? handlerInterests(e) : ""}
+                                placeholder="Add your Interests"
+                            />
+                            <button className="add-tag" onClick={(e) => handlerInterestsMobile(e)}>
+                                <img src={plus} alt="add-tag" />
+                            </button>
+                        </div>
+                    </div>
+
             </div>
-
-            <input  className="home-input" type={'text'} value={input.feelings} 
-                onChange = {(e) => setInput({...input, feelings : e.target.value})} 
-                onKeyDown = {(e) => (e.key === 'Enter') ? handlerFeelings(e) : "" } 
-                placeholder = "Add your feelings"
-                />
-                <button className="add-tag" onClick={(e)=> handlerFeelingsMobile(e)}></button>
-                <br/>
-
-            <label  className="input-label">What do you want to talk about ?</label><br/>
-
-            <div id="interests">
-                {interests.map(item => <Tag key = {item} name = {item} remove = {removeInterests}/>)}  
-            </div>
-
-            <input  className="home-input" type={'text'} value={input.interests} 
-                onChange = {(e) => setInput({...input, interests : e.target.value})} 
-                onKeyDown = {(e) => (e.key === 'Enter') ? handlerInterests(e) : "" }
-                placeholder = "Add your Interests"
-                />
-                <button className="add-tag" onClick={(e) => handlerInterestsMobile(e)}> </button>
-                <br/>
-                <button className="home-chatbtn" onClick={(e) => submitUser(e) }>Let’s chat 🙌</button>
+                <button className="home-chatbtn" onClick={(e) => submitUser(e) }> Start chatting 🗨️</button>
            
 
             </form>

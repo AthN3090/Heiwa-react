@@ -1,5 +1,6 @@
 import { createContext, useState ,useEffect} from 'react';
 import './App.css';
+import './output.css'
 import Home from './components/Home/Home';
 import Chat from './components/Chat/Chat';
 import {Routes, Route, Navigate} from 'react-router-dom'

@@ -51,8 +51,9 @@ function Whiteboard({socket, receiver}){
             isDrawing = false
         }
         function resizeCanvas(e){
+            console.log('resized')
             canvas.width = canvasContainer.current.clientWidth;
-            canvas.height = canvasContainer.current.clientHeight;
+            canvas.height = canvasContainer.current.clientHeight - 105;
         }
         
         function clearWhiteBoard(){
@@ -107,9 +108,9 @@ function Whiteboard({socket, receiver}){
     
 
     return(  
-    <div className='white-board'>
+    <div className='white-board' >
         <p style={{textAlign:"center", color:"white", margin:"0px"}}> Whiteboard</p>
-        <div style={{width: '100%', height: '60vh'}} ref={canvasContainer}>
+        <div style={{width: '100%', height:"100%"}} ref={canvasContainer}>
             <canvas ref={canvasRef}></canvas>
         </div>
         <div id = "color-n-reset">

@@ -1,4 +1,10 @@
+@import "tailwindcss";
+:root{
+  --black: #09090b;
+  --gray:#18181b;
+  --green:#009966;
 
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./background.png);
+  background-color: var(--black);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
